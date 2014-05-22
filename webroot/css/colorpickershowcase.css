@@ -1,0 +1,49 @@
+
+.cp {
+   /*margin: 20px;*/
+}
+
+.cTool {
+   border: 1px solid lightgray;
+   background-color: white;
+   text-align: center;
+}
+
+.cTool input {
+   width: 65px;
+   border: 1px solid black;
+}
+
+.cTool label {
+   font-size: 14px;
+   font-weight: bold;
+}
+.rgb-labels label{
+  font-size: 12px;
+  padding: 2px;
+  line-height: 22px;
+}
+.rgb-labels input{
+  font-size: 14px;
+  padding: 5px;
+  height: 28px; 
+}
+.rgb-labels input, .rgb-labels label{
+  /*float: left;	*/
+  display: inline-block;
+}
+
+.squareColor {
+   width: 40px;
+   height: 40px;
+   display: inline-block;
+   margin: 20px 0 0 20px;
+   border: 1px solid black;
+}
+
+.text-color {
+   display: inline-block;
+  line-height: 40px !important;
+  margin: 20px 0 0 5px;
+  vertical-align: top;
+}

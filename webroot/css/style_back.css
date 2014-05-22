@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+}
+
+ul.todo-list li {
+    padding: 5px 3px;
+    border-width: 0px 0px 1px;
+    border-style: dotted;
+    border-color: #eee;
+}
+
+ul.todo-list li:hover {
+    background-color: #eee;
+}
+
+ul.todo-list li.done {
+    text-decoration: line-through;
+    background-color: #ddd;
+}
+
+div.exercicio {
+    border-top: 1px dotted #eee;
+}
+
+.mupi-navbar {
+  height: 40px;
+}
+.not_logged_header .menu{
+  line-height: 40px;
+}
+.logo {
+  margin-top: 3px;
+}
+.logo_about{
+  height: auto;
+  margin: 25px auto;
+  /*text-align: center;*/
+  width: 250px;
+}
+
+.not_logged_header .participe{
+  text-align: left;
+}
+.not_logged_header .input, .tel {
+  text-align: center;
+  line-height: 40px;
+}
+
+.logo {
+  background: url("../img/logomini.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.mupi-navbar {
+  background-color: #332213;
+  box-shadow: 0 0 2px 2px #444;
+  height: 40px;
+}
+#content {
+  padding-top: 10px;
+}
+.not_logged_header {
+  text-align: right;
+  line-height: 40px;
+}
+.not_logged_header a {
+  color: white;
+  padding: 0 15px;
+}
+.not_logged_header a:last-child {
+  padding: 0;
+}
+.not_logged_header a:hover {
+  text-decoration: none;
+  color: #08C;
+}
+#login_header_but {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+.alert {
+  margin-top: 40px !important;
+}
+
+#wrapper {
+  min-height: 100%;
+  padding-top: 40px;
+}
+
+.navegador {
+    background: url('../img/cross-browser.png');
+    width: 82px;
+    height: 82px;
+    display: block;
+    float: left;
+}
+
+.chrome {
+    background-position: -66px -13px;
+}
+
+.firefox {
+    background-position: -165px -13px;
+}
+
+.opera {
+    background-position: -21px -105px;
+}
+
+.safari {
+    background-position: -107px -108px;
+}
+
+.ie {
+    background-position: -206px -109px;
+}
+
+
+
+/* Sidebar */
+.lesson-sidebar{
+  min-width: 300px;
+/*  width: 300px;
+  float: left;*/
+}
+/* Sidebar */
+
+
+/* course-content*/
+.lesson-content{
+/*  margin-left: 300px;
+  min-width: 600px;*/
+}
+/* course-content*/

@@ -1,0 +1,223 @@
+@import url('http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css');
+@import url('http://fonts.googleapis.com/css?family=Noto+Sans');
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  min-height: 100%;
+  height: 100%
+}
+body {
+  font-family: 'Noto Sans';
+}
+
+i{
+  font-family: FontAwesome;
+}
+
+/* Step content */
+
+.step-content{
+  padding: 15px 20px !important;
+  margin-top: 40px !important;
+  background-color: rgba(247, 250, 255, 1);
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.step-content p{
+  line-height: 25px;
+  margin: 15px 0;
+}
+.step-content li{
+  line-height: 25px;
+}
+
+/* Step content */
+
+.menu_dashboard{
+  list-style: none;
+  /*text-align: center;*/
+  margin: 0;
+}
+.menu_dashboard li{
+  padding: 0;
+  margin: 0;
+}
+.menu_dashboard a {
+  
+}
+.menu_dashboard a:hover{
+  text-decoration: none;
+  color: #222;
+}
+.menu-forum{
+  margin-top: 20px;
+}
+.menu-forum ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-forum ul li {
+    margin: 5px 0;
+} 
+
+/* Wall */
+
+.wall{
+  background-color: rgb(255, 255, 192);
+  padding: 0 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  box-shadow: 3px 3px 5px #CCC;
+  border-top: 8px solid rgb(255, 227, 186);
+}
+.wall ul li{
+  line-height: 20px;
+}
+.methodology, .welcome{
+  margin: 10px 0;
+  padding: 10px;
+}
+.welcome{
+
+}
+/* Wall */
+
+.cards > div{
+  background-color: #f5f5f5;
+  box-shadow: 2px 2px 2px #ccc;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 10px;
+  margin: 10px 0;
+}
+.cards div a.openbadge {
+  display: block;
+  text-align: center;
+}
+/* Responsive */
+  @media(max-width: 1199px){
+    .container{
+      width: 85%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: 1200px){
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+      width: 960px !important;
+    }
+  }
+/* Responsive */
+
+
+/* images for the first lesson */
+.navegador {
+    background: url('../img/cross-browser.png');
+    width: 82px;
+    height: 82px;
+    display: block;
+    float: left;
+}
+
+.chrome {
+    background-position: -66px -13px;
+}
+
+.firefox {
+    background-position: -165px -13px;
+}
+
+.opera {
+    background-position: -21px -105px;
+}
+
+.safari {
+    background-position: -107px -108px;
+}
+
+.ie {
+    background-position: -206px -109px;
+}
+
+.internet-infographic{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.comment-fixing {
+    background-position: -245px -131px;
+}
+
+.comments-container {
+    margin-top: 10px;
+}
+
+.answer {
+    margin: 0px auto;
+    padding: 0 10px;
+    border-top: 1px solid #bbb;    
+}
+
+.answer p {
+    margin: 0;
+}
+
+.answer-comment {
+    border-bottom: 1px dotted #F7F7CC;
+    color: #666;
+    padding: 2px;
+    font-size: 93%;
+}
+
+.answer-comment:hover {
+    background-color: #f7f7f7;
+}
+
+.comment-textarea {
+    float: left;
+}
+
+.question {
+    padding: 0 10px;
+    border-top: 1px solid #ccc;
+}
+
+#answer {
+    
+}
+
+.comment-user {
+    color: #000;
+}
+
+.comment-date {
+    color: #000;
+}
+
+.profile-pic {
+    margin: 15px auto;
+}
+
+.comments-container input[type=submit]{
+    margin-left: 10px;
+}
+
+.answer-comment-form, .comment-form {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    height: auto;
+}
+
+.breadcrumb li form.form-search {
+    margin: 0;
+}

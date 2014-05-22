@@ -1,0 +1,27 @@
+.editEx .render{
+  /*background: rgba(255,255,255, 0.8);*/
+  border: 1px solid rgba(222, 222, 222, 0.5);
+}
+
+.editEx .editor{
+  min-height: 150px !important;
+}
+
+.editEx .editor-full {
+  min-height: 650px !important;
+}
+
+.editEx .render table{
+  border: 1px solid #000;
+}
+.editEx .render tr{
+  border: 1px solid #000;
+}
+.editEx .render td{
+  padding: 2px;
+  border: 1px solid #000;
+}
+.editEx .render th{
+  padding: 2px;
+  border: 2px solid #000;
+}

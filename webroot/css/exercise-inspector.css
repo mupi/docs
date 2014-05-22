@@ -1,0 +1,15 @@
+.toinspect ul{
+  padding: 10px 10px 10px 30px;
+  background-color: #ccc;
+  margin: 0 0 10px;
+}
+
+.toinspect td,
+.toinspect th,
+.toinspect tr,
+.toinspect table,
+.toinspect tbody {
+  padding: 10px;
+  margin: 10px;
+  background-color: #ccc;
+}

@@ -1,0 +1,31 @@
+
+/* forum */
+.topics p{
+    line-height: 1em;
+    margin: 10px 0;
+}
+.post-time{
+  font-size: 0.8em;
+  color: #444;
+}
+
+.topics .span1 span{
+    word-wrap: break-word;
+}
+
+.profile{
+    padding-top: 10px;
+}
+.profile img{
+    margin: 0
+}
+.profile p{
+    margin: 0;
+    line-height: 1em;
+}
+.answers{
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+/* forum */

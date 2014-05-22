@@ -1,0 +1,3 @@
+user-agent: *
+disallow: /aulas
+sitemap: http://escola.mupi.me/sitemap.xml
