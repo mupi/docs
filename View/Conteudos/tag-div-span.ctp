@@ -64,9 +64,10 @@
     <span style="color: red">esse span com texto vermelho</span> dentro desse parágrafo
      ele ocupa apenas o seu tamanho e mantém-se na mesma linha que o colocamos.
   </p>
-  <p>
-    Assim como uma imagem <img src="http://escola.mupi.me/img/fotoGato1.png" alt="Foto do gato 1" 
-  title="Gato Otto Zepelin" width="100" /> continua na mesma linha.
+  <p
+    Assim como uma imagem <img src="http://docs.escolamupi.com.br/img/fotoGato1.png" 
+                            alt="Foto do gato 1" title="Gato Otto Zepelin" width="100" /> 
+    continua na mesma linha.
   </p>
   <div> Já se abrimos uma div dentro de outra div
   <div style="background-color: #ccc;">como essa, mesmo estando dentro da outra, por ser 
