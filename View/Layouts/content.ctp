@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- !!! Titulo da página -->
-    <title>mupi: O que significa HTML, principais termos; o que há de novo no HTML5</title>
-
+    <title>
+    <?php
+        echo $this->fetch('title', "Mupi docs");
+    ?>
+    </title>
     <!-- Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
