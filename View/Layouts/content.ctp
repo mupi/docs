@@ -20,6 +20,9 @@
     <meta property="og:image" content="http://docs.escolamupi.com.br/img/logomupi.png" />
     <meta property="og:description" content="Estude HTML, CSS e conceitos de Web Design" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo Router::url( $this->here, true); ?>" />
+    <meta property="fb:app_id" content="292772274170801" />
+
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico" />
 
     <!-- Font Awesome -->
