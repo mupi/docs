@@ -18,9 +18,8 @@
     <meta property="og:image" content="http://docs.escolamupi.com.br/img/mupilogo.png" />
     <meta property="og:image" content="http://docs.escolamupi.com.br/img/logoFB.jpg" />
     <meta property="og:image" content="http://docs.escolamupi.com.br/img/logomupi.png" />
-    <meta property="og:description" content="A primeira escola online de tecnologia criativa do Brasil!" />
+    <meta property="og:description" content="Estude HTML, CSS e conceitos de Web Design" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://docs.escolamupi.com.br" />
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico" />
 
     <!-- Font Awesome -->
