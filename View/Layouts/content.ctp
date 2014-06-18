@@ -13,7 +13,7 @@
     </title>
     <!-- Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta property="og:title" content="Mupi Escola!" />
     <meta property="og:image" content="http://docs.escolamupi.com.br/img/mupilogo.png" />
     <meta property="og:image" content="http://docs.escolamupi.com.br/img/logoFB.jpg" />
@@ -21,20 +21,20 @@
     <meta property="og:description" content="A primeira escola online de tecnologia criativa do Brasil!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://docs.escolamupi.com.br" />
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico" />  
-    
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico" />
+
     <!-- Font Awesome -->
     <?php echo $this->Html->css('font-awesome.min.css'); ?>
     <!--[if lt IE 8]>
       <?php echo $this->Html->css('font-awesome-ie7.min.css'); ?>
       <link rel="stylesheet" type="text/css" href="">
     <![endif]-->
-    
+
 
     <?php
       // Bootstrap
       echo $this->Html->css('bootstrap.min.css');
-      
+
       // echo $this->Html->css('wizard.css');
       // echo $this->Html->css('jquery.mCustomScrollbar.css');
       echo $this->Html->css('toggle-switch.css');
@@ -45,7 +45,7 @@
 
       echo $this->Html->css('bootstrap-responsive.min.css');
     ?>
-    
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <?php echo $this->Html->script('http://html5shim.googlecode.com/svn/trunk/html5.js'); ?>
@@ -64,6 +64,16 @@
     </script>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=292772274170801&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script> 
     <div id="wrapper">
       <div class="navbar mupi-navbar navbar-fixed-top not_logged_header">
         <div class="container-fluid">
@@ -101,30 +111,30 @@
                 </a>
               </div>
             </div>
-            <div class="span6 offset1 menu visible-desktop info-menu">   
+            <div class="span6 offset1 menu visible-desktop info-menu">
               <?php
                        echo $this->Html->link(
-                         'Nossos parceiros', 
+                         'Nossos parceiros',
                          array(
-                           'controller' => '', 
-                           'action' => '#parceiros'), 
+                           'controller' => '',
+                           'action' => '#parceiros'),
                          array(
                            'style' => 'border-right: 1px solid white;'));
               ?>
               <?php
                 echo $this->Html->link(
-                  'Quem Somos', 
-                  array('controller' => '', 
+                  'Quem Somos',
+                  array('controller' => '',
                         'action' => '#sobre'), null);
               ?>
             </div>
           </div>
         </div>
       </div>
-      
+
       <?php echo $this->Session->flash(); ?>
       <?php echo $this->fetch('content'); ?>
-    <div class="container"> 
+    <div class="container">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -150,12 +160,12 @@
                 <a class="fb" href="http://www.facebook.com/escolamupi"
                    target="_blank" title="facebook"></a>
               </li>
-              
+
               <li>
                 <a class="ln" href="http://www.linkedin.com/company/mupi"
                    target="_blank" title="linkedin"></a>
               </li>
-              
+
               <li>
                 <a class="tw" href="https://twitter.com/mbideas" target="_blank"
                    title="twitter"></a>
@@ -190,7 +200,7 @@
       // Our js
       echo $this->Html->script('escola.main.js');
       //echo $this->Html->script('wizard.js');
-    
+
       echo $this->fetch('script');
     ?>
 

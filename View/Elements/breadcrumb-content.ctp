@@ -91,26 +91,24 @@
           </ul>
         </li>
         <li class="pull-right visible-desktop">
-          <iframe
-             class="pull-right"
-             src="//www.facebook.com/plugins/like.php?href=<?php echo $link; ?>&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=trebuchet+ms&amp;colorscheme=light&amp;action=like&amp;height=35&amp;appId=292772274170801"
-             scrolling="no"
-             frameborder="0"
-             style="border:none; overflow:hidden; width:400px; height:30px;
-             margin-top: 5px;"
-             allowtransparency="true">
-          </iframe>
+            <div class="fb-like"
+                data-href="<?php echo $link; ?>"
+                data-layout="button_count"
+                data-action="like" data-show-faces="false"
+                data-share="true"
+                style="top: -8px;">
+
+            </div>
         </li>
       </ul>
-      <iframe
-         class="hidden-desktop"
-         src="//www.facebook.com/plugins/like.php?href=<?php echo $link; ?>&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font=trebuchet+ms&amp;colorscheme=light&amp;action=like&amp;height=35&amp;appId=292772274170801"
-         scrolling="no"
-         frameborder="0"
-         style="border:none; overflow:hidden; width:400px; height:30px;
-                margin-top: 5px;"
-         allowtransparency="true">
-      </iframe>
+      <div class="fb-like hidden-desktop"
+                data-href="<?php echo $link; ?>"
+                data-layout="button_count"
+                data-action="like" data-show-faces="false"
+                data-share="true"
+                style="border:none; overflow:hidden; width:400px; height:30px;
+                margin-top: 5px;">
+      </div>
     </div>
   </div>
 </div>
