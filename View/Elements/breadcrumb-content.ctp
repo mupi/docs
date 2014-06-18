@@ -92,7 +92,6 @@
         </li>
         <li class="pull-right visible-desktop">
             <div class="fb-like"
-                data-href="<?php echo $link; ?>"
                 data-layout="button_count"
                 data-action="like" data-show-faces="false"
                 data-share="true"
@@ -102,7 +101,6 @@
         </li>
       </ul>
       <div class="fb-like hidden-desktop"
-                data-href="<?php echo $link; ?>"
                 data-layout="button_count"
                 data-action="like" data-show-faces="false"
                 data-share="true"
