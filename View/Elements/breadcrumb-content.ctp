@@ -1,36 +1,46 @@
 <?php
   $aulas = array(
-    array("Arquitetura Cliente/Servidor", "internet-arquitetura"),
-    array("Internet, web e DNS", "internet-dns"),
-    array("Protocolos e Jargões", "internet-protocolos"),
-    array("Infográfico: internet", "internet-infografico"),
-    array("Cores na Web", "design-cores"),
-    array("O que é design", "design"),
-    array("Design thinking", "design-thinking"),
-    array("Wireframes e Mockups", "design-mockup"),
-    array("O que é HTML", "html-definicao"),
-    array("Imagem", "tag-img"),
-    array("Links", "tag-a"),
-    array("Elementos textuais", "tag-textuais"),
-    array("Listas", "tag-listas"),
-    array("Tabelas", "tag-tabela"),
-    array("Div e span", "tag-div-span"),
-    array("Section", "tag-section"),
-    array("Header", "tag-header"),
-    array("Footer", "tag-footer"),
-    array("Aside", "tag-aside"),
-    array("Nav", "tag-nav"),
-    array("Estrutura HTML", "estrutura-html"),
-    array("Sobre CSS", "css-sobre"),
-    array("Formas de utilizar CSS", "css-como-usar"),
-    array("Propriedades CSS", "css-propriedades"),
-    array("Propriedade CSS color", "css-color"),
-    array("Propriedade CSS font", "css-font"),
-    array("Modelo de caixa", "modelo-de-caixa"),
-    array("Propriedade CSS border", "css-border"),
-    array("Propriedade CSS width, height", "css-width-height"),
-    array("Posicionando Elementos com CSS", "css-posicionamento"),
-    array("Estrutura de Diretórios", "estrutura-diretorios"),
+       "Como funciona a Internet" =>  array(
+            array("Arquitetura Cliente/Servidor", "internet-arquitetura"),
+            array("Internet, web e DNS", "internet-dns"),
+            array("Protocolos e Jargões", "internet-protocolos"),
+            array("Infográfico: internet", "internet-infografico"),
+        ),
+        "Design na Web" => array(     
+            array("Cores na Web", "design-cores"),
+            array("O que é design", "design"),
+            array("Design thinking", "design-thinking"),
+            array("Wireframes e Mockups", "design-mockup"),
+        ),
+        "Tópicos sobre HTML" => array(
+            array("O que é HTML", "html-definicao"),
+            array("Imagem", "tag-img"),
+            array("Links", "tag-a"),
+            array("Elementos textuais", "tag-textuais"),
+            array("Listas", "tag-listas"),
+            array("Tabelas", "tag-tabela"),
+            array("Div e span", "tag-div-span"),
+            array("Section", "tag-section"),
+            array("Header", "tag-header"),
+            array("Footer", "tag-footer"),
+            array("Aside", "tag-aside"),
+            array("Nav", "tag-nav"),
+            array("Estrutura HTML", "estrutura-html"),
+        ),
+        "Tópicos sobre CSS3" => array(
+            array("Sobre CSS", "css-sobre"),
+            array("Formas de utilizar CSS", "css-como-usar"),
+            array("Propriedades CSS", "css-propriedades"),
+            array("Propriedade CSS color", "css-color"),
+            array("Propriedade CSS font", "css-font"),
+            array("Modelo de caixa", "modelo-de-caixa"),
+            array("Propriedade CSS border", "css-border"),
+            array("Propriedade CSS width, height", "css-width-height"),
+            array("Posicionando Elementos com CSS", "css-posicionamento"),
+        ),
+        "Projetos" => array(
+            array("Estrutura de Diretórios", "estrutura-diretorios"),
+        )
   );
 
   $link = urlencode(Router::url( $this->here, true));
@@ -47,19 +57,31 @@
           <!--<a href="#"><?php echo isset($curso) ? $curso : ""; ?></a>-->
           <span class="divider">/</span>
         </li>
+        
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <?php echo isset($aula) ? $aula : ""; ?>
             <i class="icon-sort-down"></i></a>
-          <ul class="dropdown-menu">
+            <ul class="dropdown-menu">
 	    <?php
-    	      foreach ($aulas as $a){
-    	        echo '<li ' 
-		. (isset($a[1]) && $a[1] == $url ? 'class="disabled"' : '') 
-		. '><a href="' . $a[1] . '">' 
-		. $a[0] 
-		. '</a></li>';
-  	      }
+    	    foreach ($aulas as $topico => $aaulas){
+        ?>
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"><?php echo $topico; ?></a>
+                <ul class="dropdown-menu">
+        <?php 
+                foreach($aaulas as $a) {
+    	            echo '<li ' 
+                    . (isset($a[1]) && $a[1] == $url ? 'class="disabled"' : '') 
+                    . '><a href="' . $a[1] . '">' 
+                    . $a[0] 
+                    . '</a></li>';
+                }
+        ?>
+                </ul>
+            </li>
+        <?php
+            }
 	    ?>
           </ul>
         </li>
